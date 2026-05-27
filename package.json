@@ -1,0 +1,26 @@
+{
+  "name": "opencode-marketplace",
+  "version": "1.0.0",
+  "description": "OpenCode plugin that gives repos VS Code Copilot-style marketplace skill distribution",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "bundle": "bun build src/index.ts --outfile dist/opencode-marketplace.js --target bun --format esm"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "latest",
+    "typescript": "^5.0.0",
+    "bun-types": "latest"
+  },
+  "keywords": ["opencode", "plugin", "marketplace", "skills", "ai", "agent-skills"],
+  "author": {
+    "name": "Alexander Sadovsky"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/asadovsky/opencode-marketplace"
+  }
+}
