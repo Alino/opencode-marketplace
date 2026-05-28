@@ -37,15 +37,15 @@ The plugin is modeled after VS Code's own marketplace implementation (`pluginMar
 Run this inside your repo:
 
 ```bash
-opencode plugin asadovsky/opencode-marketplace
+opencode plugin Alino/opencode-marketplace
 ```
 
-OpenCode uses npm's package resolver under the hood, which understands GitHub shorthand natively. This adds `"plugin": ["asadovsky/opencode-marketplace"]` to your `opencode.json` and installs the package automatically on the next startup. No build step, no file copying.
+OpenCode uses npm's package resolver under the hood, which understands GitHub shorthand natively. This adds `"plugin": ["Alino/opencode-marketplace"]` to your `opencode.json` and installs the package automatically on the next startup. No build step, no file copying.
 
 You can also pin to a specific tag or commit:
 
 ```bash
-opencode plugin asadovsky/opencode-marketplace#v1.0.0
+opencode plugin Alino/opencode-marketplace#v1.0.0
 ```
 
 ### Option B: Local bundle
@@ -54,7 +54,7 @@ Build the bundle and commit it as a local plugin file. OpenCode auto-discovers a
 
 ```bash
 # 1. Clone and build
-git clone https://github.com/asadovsky/opencode-marketplace
+git clone https://github.com/Alino/opencode-marketplace
 cd opencode-marketplace
 bun install
 bun run bundle                    # produces dist/opencode-marketplace.js
@@ -101,7 +101,7 @@ my-skills/
 ### 2. Install the plugin
 
 ```bash
-opencode plugin asadovsky/opencode-marketplace
+opencode plugin Alino/opencode-marketplace
 ```
 
 See [Installing into OpenCode](#installing-into-opencode) for other options.
